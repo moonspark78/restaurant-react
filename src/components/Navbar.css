@@ -1,0 +1,30 @@
+.navcontainer{
+    height: 90px;
+    background-color: aquamarine;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.logo h1{
+    color: red;
+}
+
+.favoris button{
+    width: 200px;
+    height: 50px;
+    border-radius: 17px;
+    color: red;
+    border: solid 3px black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.favoris button:hover{
+    transform: scale(1.1);
+}

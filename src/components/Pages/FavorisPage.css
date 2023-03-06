@@ -1,0 +1,18 @@
+.favoris{
+    background-color:  #404040;
+    
+}
+.cardfav{
+    width: 94%;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: auto;
+    gap: 10px;
+    align-items: center;
+}
+.textfav{
+    text-align: center;
+    color: white;
+}

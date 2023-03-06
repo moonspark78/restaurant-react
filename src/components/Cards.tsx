@@ -8,13 +8,13 @@ import { useCreateContextResto } from "./context/ContextResto";
 
 
 type RestaurantProps = {
-  restaurants: RestaurantTypes;
+  restaurant: RestaurantTypes;
 
 };
 
-export const Cards = ({ restaurants }: RestaurantProps) => {
+export const Cards = ({ restaurant }: RestaurantProps) => {
   const [isYellow, setIsYellow] = useState(false);
-  const {favorites, addFav} = useCreateContextResto();
+  const {favorites, addFav, removeFav} = useCreateContextResto();
  
 
 
@@ -24,7 +24,7 @@ export const Cards = ({ restaurants }: RestaurantProps) => {
 
   const Verify =(id: number) =>{
     let verif = favorites.some(
-      (restoIdFav) => restoIdFav.id === restaurants.id
+      (restoIdFav) => restoIdFav.id === restaurant.id
     );
     return verif;
   };
@@ -35,21 +35,21 @@ export const Cards = ({ restaurants }: RestaurantProps) => {
 
   return (
     <div className="restaurantCard">
-      <img src={restaurants.img} alt="" />
+      <img src={restaurant.img} alt="" />
 
       <div className="flex">
         <div className="text">
-          <Link to={`/page/${restaurants.id}`}>
-            <h3>{restaurants.name}</h3>
-            <p>{restaurants.description_short}</p>
+          <Link to={`/page/${restaurant.id}`}>
+            <h3>{restaurant.name}</h3>
+            <p>{restaurant.description_short}</p>
           </Link>
         </div>
 
         <div className="iconfav" /* onClick={()=>{handleClick()} }*/>
           {/* <FaStar size={32} color={isYellow ? "yellow" : "grey"} /> */}
-          {Verify(restaurants.id) ?
-          (<AiFillStar size={35}/>):
-          (<p onClick={() => addFav(restaurants)}><AiOutlineStar size={35}/></p>)
+          {Verify(restaurant.id) ?
+          (<AiFillStar size={35} onClick={()=> removeFav(restaurant.id)}/>):
+          (<p onClick={() => addFav(restaurant)}><AiOutlineStar size={35}/></p>)
         }
 
         </div>

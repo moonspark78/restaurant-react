@@ -1,5 +1,26 @@
 # Getting Started with Create React App
 
+# Contexte du projet
+Vous êtes démarché.e pour réaliser une application qui permet aux utilisateurs d'avoir toutes les informations sur plusieurs restaurants.
+
+L'application devra présenter une page d'accueil, listant les restaurants sous forme de cards (avec une image, le titre et le sous-titre).
+
+En cliquant sur chaque restaurant, vous aurez accès à une nouvelle page présentant le menu et les informations du restaurant choisi.
+
+Chaque restaurant pourra être ajouté à la liste des favoris depuis chaque card de la home et depuis sa propre page.
+
+Sur la page listant les favoris, vous devez retrouver toutes les cards (même composant que celui de la home) des restaurants choisis en favoris. Vous aurez la possibilité de supprimer chaque restaurant de la liste des favoris depuis cette page. Cette page de favoris est accessible depuis la navbar.
+
+Une modale de confirmation de la suppression devra être affichée avant la suppression du restaurant de la liste des favoris.
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

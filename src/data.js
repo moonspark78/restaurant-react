@@ -6,7 +6,7 @@ export const restaurants = [
     description_short: "Un moment à part",
     description_long:
       "L'Échappée réunit tous les critères pour un repas réussi : une cuisine gastronomique, récompensée d'une étoile au Guide Michelin, et une vue légendaire sur la célèbre cathédrale de Notre-Dame. Que demander de plus ?",
-    img: "./images/0.jpeg",
+    img: "/images/0.jpeg",
     menu: {
       entrees: [" Gaufre de pommes de terre au saumon fumé", "Œufs mimosa aux œufs de saumon"],
       dishes: ["Couscous de poisson", "Spanakopita", "Parmentier de porc"],
@@ -20,7 +20,7 @@ export const restaurants = [
     description_short: "Familial et végétarien",
     description_long:
       "Pour les amoureux des légumes et des produits de saison, Le Bain est un endroit idéal. Le tout dans un lieu agréable et cosy.",
-    img: "./images/1.jpeg",
+    img: "/images/1.jpeg",
     menu: {
       entrees: ["Éclairs aux langoustines et chantilly au wasabi", "Salade de crabe"],
       dishes: ["Koulibiac de saumon", "Gnocchis au poulet", "Tourte au poulet, petits légumes "],
@@ -35,7 +35,7 @@ export const restaurants = [
     description_short: "Restaurant de poissons",
     description_long:
       "Aux filets bleus vous accueille pour venir déguster la pêche du jour ! Dans un cadre magnifique avec vue directe sur la mer.",
-    img: "./images/2.jpeg",
+    img: "/images/2.jpeg",
     menu: {
       entrees: ["Terrine végétale", "Velouté aux champignons et à la truffe"],
       dishes: ["Rôti de porc", "Parmentier de poulet au brocoli", "Soupe lentilles potiron et aubergine"],
@@ -49,7 +49,7 @@ export const restaurants = [
     description_short: "Brasserie parisienne",
     description_long:
       "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
-    img: "./images/3.jpeg",
+    img: "/images/3.jpeg",
     menu: {
       entrees: [" Huîtres gratinées au champagne", "Velouté de potimarron aux cèpes"],
       dishes: ["Spaghettis de courgettes au jambon et crème de champignons", "Gratin de poireaux façon tartiflette", "Tourte boeuf-champignons"],
@@ -63,7 +63,7 @@ export const restaurants = [
     description_short: "Cuisine basque et chaleureuse",
     description_long:
       "Plats basques gastronomiques dans un lieu aux tons chauds et colorés, avec chaises et comptoir en bois.",
-    img: "./images/4.jpeg",
+    img: "/images/4.jpeg",
     menu: {
       entrees: ["Mousse avocat saumon", "Salade sapin de Noël"],
       dishes: ["Potée au potimarron", "Dahl aux lentilles corail", "Gratin dauphinois revisité"],
@@ -77,7 +77,7 @@ export const restaurants = [
     description_short: "Brasserie pittoresque de spécialités françaises",
     description_long:
       "Cuisine et boissons de brasserie parisienne classique dans un restaurant établi de longue date avec terrasse au bord du canal.",
-    img: "./images/5.jpeg",
+    img: "/images/5.jpeg",
     menu: {
       entrees: [" Salade de chou rouge aux noix", "Saumon en croûte"],
       dishes: ["Bricks à l'œuf", "Crevettes au curry", "Croque cake au saumon"],
@@ -91,7 +91,7 @@ export const restaurants = [
     description_short: "Cuisine japonaise, cadre à l'ambiance détendue",
     description_long:
       "Restaurant japonais de style décontracté servant ramens, plats sautés et donburis, accompagnés de bière et de saké.",
-    img: "./images/6.jpeg",
+    img: "/images/6.jpeg",
     menu: {
       entrees: [" Bûche salée saumon épinard", "Salade océane"],
       dishes: ["Pâtes à la coppa", "Gratin de pommes de terre", "Moussaka "],
@@ -105,7 +105,7 @@ export const restaurants = [
     description_short: "Cuisine japonaise, cadre à l'ambiance détendue",
     description_long:
       "Restaurant japonais de style décontracté servant ramens, plats sautés et donburis, accompagnés de bière et de saké.",
-    img: "./images/7.jpeg",
+    img: "/images/7.jpeg",
     menu: {
       entrees: ["Oeuf cocotte", "Soupe à l'oignon traditionnelle"],
       dishes: ["Rôti de boeuf", "Ravioli traditionnels à la sauce tomate", "Daube provençale traditionnelle"],
@@ -119,7 +119,7 @@ export const restaurants = [
     description_short: "Découvrez le délicieux goût de notre kebab fraîchement préparé !",
     description_long:
       " Notre viande de qualité supérieure est marinée dans des épices savoureuses et grillée à la perfection sur une broche verticale, pour vous offrir une expérience culinaire authentique et délicieuse.",
-    img: "./images/8.jpeg",
+    img: "/images/8.jpeg",
     menu: {
       entrees: ["Salade", "Saumon en croûte"],
       dishes: ["Kebab", "Chicken Chika", "Triple Steak"],

@@ -1,4 +1,5 @@
 import React, { useState,createContext, useContext } from 'react'
+import { restaurants } from '../../data';
 import { RestaurantTypes } from '../../models/MenuTypes';
 
 type contextProps ={
@@ -8,6 +9,8 @@ type contextProps ={
 type CreateContextResto ={
   favorites: RestaurantTypes[];
   addFav: (restaurant: RestaurantTypes) => void;
+  removeFav: (id: number) => void;
+
 }
 
 const CreateContextResto= createContext({} as CreateContextResto);
@@ -29,12 +32,21 @@ export const ContextResto = ({children}:contextProps) => {
       setFavorites(favsSecd);
     };
 
+    const removeFav = (id: number) =>{
+      let removeFavs=[...favorites];
+      let removeSecd= removeFavs.filter(
+        (restaurants) => restaurants.id !== id )
+        setFavorites(removeSecd);
+    };
+
+
     
 
   return (
     <CreateContextResto.Provider
     value={{
       addFav,
+      removeFav,
       favorites,
     }}>
       {children}

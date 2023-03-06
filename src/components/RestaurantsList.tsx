@@ -19,7 +19,7 @@ const RestaurantsList = () => {
         </ul> */}
 
       {restaurants.map((restaurant: RestaurantTypes, index) => {
-        return <Cards key={index} restaurants={restaurant} />;
+        return <Cards key={index} restaurant={restaurant} />;
       })}
     </div>
   );

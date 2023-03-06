@@ -19,7 +19,7 @@ export const FavorisPage = () => {
       </div>
       <div className='cardfav'>
         {favorites.map((favor:RestaurantTypes) =>(
-          <Cards restaurants={favor} key={favor.id}/>
+          <Cards restaurant={favor} key={favor.id}/>
         ))}
 
       </div>

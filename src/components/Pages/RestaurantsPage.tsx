@@ -7,7 +7,7 @@ import "./RestaurantsPage.css";
 
 
 type RestaurantProps = {
-  restaurants: RestaurantTypes;
+  resto: RestaurantTypes;
 
 };
 
@@ -21,9 +21,9 @@ const RestaurantsPage = () => {
   console.log(typeof id);
   const restaurant = restaurants.filter(
     (restaurant) => restaurant.id === Number(id)
-  );
-  console.log(restaurant);
-  const {favorites, addFav} = useCreateContextResto();
+  ); 
+  
+  const {favorites, addFav, removeFav} = useCreateContextResto();
 
   
   
@@ -33,13 +33,13 @@ const RestaurantsPage = () => {
 
   return (
     <div className="restaurantpage">
-      {restaurant.map((resto) => (
+      { restaurant.map((resto) => (
         <div>
-          {/* <img src={resto.img} alt="" /> */} {/* PROBLEME AVEC IMAGE */}
+          <img src={resto.img} alt=""/>  {/* PROBLEME AVEC IMAGE */}
           <h1>{resto.name}</h1>
           <h3>{resto.description_long}</h3>
 
-          <div className="btn"><button className="btnfav" > Ajouter aux Favoris</button></div>
+          <div className="btn"><button className="btnfav" onClick={()=>addFav(resto)}> Ajouter aux Favoris</button></div>
           
           <h1>Menu</h1>
 
